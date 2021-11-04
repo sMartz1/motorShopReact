@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/*HEADER*/
+
+header {
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    flex-flow: column;
+    background-color: #443434;
+    color: white;
+    border-bottom: solid #fe6601 5px;
+}
+
+.headSup {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo>h1 {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.logo>p {
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+.logo>img {
+    width: 35px;
+    height: 35px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.nav-item {
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 50px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    border: solid rgb(0, 0, 0, 0.2) 1px;
+    text-shadow: black;
+}
+
+.menuSup {
+    display: flex;
+}
+
+
+/*Fix border menu */
+
+.menuSup>:nth-child(even),
+nav>:nth-child(even) {
+    border-right: 0px;
+    border-left: 0px;
+}
+
+nav>:last-child {
+    border-right: solid rgb(0, 0, 0, 0.2) 1px;
+}
+
+nav>:first-child,
+.nav-item:hover {
+    background-color: #fe6601;
+    border-bottom: solid #fe6601 1px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+}
+
+
+/*FEATUREDITEMS */
+
+.featured {
+    display: flex;
+    background-color: #e9e6e1;
+    padding-left: 80px;
+    padding-right: 80px;
+    justify-content: space-between;
+}
+
+.titleFI,
+.titleFB,
+.categorys>:first-child,
+.results>:first-child {
+    color: #fe6601;
+    font-weight: bolder;
+}
+
+.titleFI {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.titleFB {
+    padding-top: 28px;
+    padding-bottom: 11px;
+}
+
+.imagesFI {
+    display: flex;
+    flex-flow: row;
+}
+
+.itemFI>img {
+    height: 150px;
+    border: solid rgb(0, 0, 0, 0.1) 2.5px;
+    border-radius: 5px;
+    margin-right: 30px;
+}
+
+.itemFI>p,
+.featured-branch>p {
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+.featured-branch {
+    margin-top: -10px;
+    margin-right: 40px;
+}
+
+.featured-branch>img {
+    height: 160px;
+    background-color: white;
+    border: solid rgb(0, 0, 0, 0.1) 2.5px;
+}
+
+
+/*ARTICLES SECTION*/
+
+.shop {
+    display: flex;
+    font-size: 12px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #faf7f2;
+}
+
+.categorys>.tagC,
+.results>.tagC {
+    background-color: white;
+    padding: 5px 80px 5px 5px;
+    border: solid rgb(0, 0, 0, 0.1) 1px;
+    margin-right: 20px;
+}
+
+.list-items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.item {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    width: 200px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    border: solid rgb(0, 0, 0, 0.1) 1px;
+}
+
+.item-title {
+    align-self: flex-start;
+    padding-left: 10px;
+}
+
+.item>img {
+    width: 110px;
+}
+
+.item-bottom {
+    display: flex;
+    align-items: center;
+}
+
+.button-buy {
+    background: linear-gradient(#f7a72d, #fe7c02);
+    padding: 4px 13px;
+    color: white;
+    margin-right: 40px;
+    border-radius: 3px;
+}
+
+
+/*PAGE SELECTION */
+
+.bar {
+    height: 2px;
+    background-color: rgb(0, 0, 0, 0.1);
+    border-radius: 1px;
+    border: solid rgba(255, 255, 255, 0.6) 1px;
+}
+
+.page-selection {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.page-selection>:first-child,
+.page-item:hover {
+    background-color: #fe6601;
+    color: white;
+    cursor: pointer;
+}
+
+.page-item {
+    font-size: 10px;
+    background-color: white;
+    border: solid rgb(0, 0, 0, 0.1) 1px;
+    padding: 5px 10px;
+    margin-right: 8px;
+    border-radius: 2px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #443434;
+    display: flex;
+    padding: 30px 80px;
+    color: white;
+    font-size: 12px;
+    justify-content: space-between;
+}
+
+.menu-footer {
+    display: flex;
+}
+
+.footer-item {
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+.social-footer {
+    margin-right: 150px;
+}
+
+.social-footer>img {
+    width: 25px;
+    opacity: 0.7;
+    margin-right: 10px;
+}
+
+.social-footer>img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
